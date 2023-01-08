@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0832E7E6-B26D-4F5B-8792-50F80A734545}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CricBuzz</RootNamespace>
+    <AssemblyName>CricBuzz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Match.Designer.cs">
+      <DependentUpon>Add_Match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Players.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Players.Designer.cs">
+      <DependentUpon>Add_Players.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_World_Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_World_Record.Designer.cs">
+      <DependentUpon>Add_World_Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="File_Handling.cs" />
+    <Compile Include="MatchesClass.cs" />
+    <Compile Include="playersClass.cs" />
+    <Compile Include="RecordClass.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AchievmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>AchievmentForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamsClass.cs" />
+    <Compile Include="UpdateTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTeam.Designer.cs">
+      <DependentUpon>UpdateTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_user_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_user_form.Designer.cs">
+      <DependentUpon>Admin_user_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn_SignUp.Designer.cs">
+      <DependentUpon>SignIn_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInForm.Designer.cs">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayersForm.Designer.cs">
+      <DependentUpon>PlayersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamsForm.Designer.cs">
+      <DependentUpon>TeamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchesForm.Designer.cs">
+      <DependentUpon>MatchesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_Match.resx">
+      <DependentUpon>Add_Match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Players.resx">
+      <DependentUpon>Add_Players.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_World_Record.resx">
+      <DependentUpon>Add_World_Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchievmentForm.resx">
+      <DependentUpon>AchievmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTeam.resx">
+      <DependentUpon>UpdateTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_user_form.resx">
+      <DependentUpon>Admin_user_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn_SignUp.resx">
+      <DependentUpon>SignIn_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInForm.resx">
+      <DependentUpon>SignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayersForm.resx">
+      <DependentUpon>PlayersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamsForm.resx">
+      <DependentUpon>TeamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchesForm.resx">
+      <DependentUpon>MatchesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
